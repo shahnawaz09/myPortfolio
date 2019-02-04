@@ -19,14 +19,48 @@
 
 <body>
   <section id="header">
-    <div class="container text-center">
-      <div class="user-box">
-        <img src="images/userImage.jpg" />
-        <h1>Md Shahnawaz Ali
-        </h1>
-        <h4>I'm
-          <span class="typed"></span>
-        </h4>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 UserBoxMb">
+          <div class="user-box">
+            <img src="images/userImage.jpg" />
+            <h3>Md Shahnawaz Ali</h3>
+            <h6>
+              <span class="typed"></span>
+            </h6>
+          </div>
+        </div>
+        <div class="col-md-6 text-left">
+          <h3 class="skillTitle">Skills</h3>
+          <ul class="skillSet">
+            <li>
+              <p class="italic">
+                3.6 years of experience in Front End Development.
+                <br/> Experience in JavaScript frameworks like Angular 2 and above, AngularJs, JQuery.
+              </p>
+            </li>
+            <li>
+              <p class="italic">
+                Experience in web development technologies like JavaScript, TypeScript, HTML5, CSS3, AJAX, JSON, GIT, JIRA, Postman, VS Code,
+                NPM, VS 2015.
+                <br/>
+                <br/>
+              </p>
+            </li>
+            <li>
+              <p class="italic">
+                Experience in NoSQL Firebase Realtime Database.
+                <br/> Experience in Responsive Web Design using frameworks like Bootstrap 3/4 and Media Query.
+                <br/>
+              </p>
+            </li>
+            <li>
+              <p class="italic">
+                Comfortable on working across the stack Prototyping, Development, Testing and Deployment.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -48,7 +82,7 @@
               <a class="nav-link" href="#top">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT ME</a>
+              <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link" href="#resume">RESUME</a>
@@ -102,32 +136,6 @@
       </div>
     </div>
 
-    <!-- Social Icons -->
-
-    <div class="social-icons">
-      <ul>
-        <a href="https://www.linkedin.com/in/md-shahnawaz-ali-568679b1" target="_blank">
-          <li>
-            <i class="fa fa-linkedin"></i>
-          </li>
-        </a>
-        <a href="https://www.instagram.com/alishahnawaz09/" target="_blank">
-          <li>
-            <i class="fa fa-instagram"></i>
-          </li>
-        </a>
-        <a href="https://m.facebook.com/shahnawaz500" target="_blank">
-          <li>
-            <i class="fa fa-facebook"></i>
-          </li>
-        </a>
-        <a href="https://github.com/shahnawaz09" target="_blank">
-          <li>
-            <i class="fa fa-github"></i>
-          </li>
-        </a>
-      </ul>
-    </div>
 
     <!-- Resume -->
 
@@ -314,7 +322,7 @@
     var scroll = new SmoothScroll('a[href*="#"]');
     $(function () {
       $(".typed").typed({
-        strings: ["Front End Developer.", "Web Designer.", "Photographer."],
+        strings: ["Front End Developer.", "Software Engineer."],
         typeSpeed: 100,
         loop: true,
       });

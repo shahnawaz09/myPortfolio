@@ -17,41 +17,76 @@ body{
 
 /*--------Header CSS--------*/
 
-#header{
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
-    url(images/background03.jpg);
-    background-position:center;
-    background-size: cover;
-    background-attachment: fixed; 
+.skillSet{
+    list-style-type: none;
+    position:relative;
+    padding-left:60px; 
 }
+
+.skillSet::before{
+    content: "";
+    background: rgba(178, 134, 68, 0.8);
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 29px;
+    z-index: 1;
+}
+
+.skillTitle {
+    color: #898989;
+   
+}
+
+.skillSet p{
+    padding-left: 5px;
+    color: #898989;
+}
+
+.resume h3{
+    color: #898989;
+}
+.skillSet li::before{
+    content: "";
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid rgba(178, 134, 68, 0.8);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+    z-index: 1;
+}
+
 #header h1{
     font-weight: 400;
 }
-/* User Info */
 
-.user-box{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+#header{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .user-box img{
-    border-radius: 50%;
     width: 250px;
     height: 250px;
-    border: 4px solid #ffffff;
+    border: 6px solid #b8a07e;
+    border-radius: 0 20px;
 }
 @media(max-width:567px){
+    .UserBoxMb{
+        margin-bottom: 30px;
+    }
     .user-box img{
         width: 160px;
         height: 160px;
     }
-    .user-box h1{
+    .user-box h3{
        font-size: 1.9rem;
     }
-    .user-box h4{
+    .user-box h6{
         font-size: 1.3rem;
     }
     
@@ -60,19 +95,19 @@ body{
 .user-box{
     width: 100%;
 }
-.user-box h1{
-    color: #ffffff;
+.user-box h3{
+    color: rgba(178, 134, 68, 0.8);
     margin: 10px;
 }
-.user-box h4{
-    color: #ffffff;
+.user-box h6{
+    color: rgba(178, 134, 68, 0.8);;
 }
 
 /* About */
 
 .about{
     padding-top: 100px;
-    margin-bottom: -130px;
+    padding-bottom: 50px;
 }
 
 .about h1{
@@ -176,7 +211,6 @@ body{
 /*  Resume  */
 
 .resume{
-    margin-top: -10px;
     padding-bottom: 30px;
     padding-top: 50px;
     background: #f9f9f9;
@@ -283,18 +317,24 @@ body{
    color:#fff;
    transition: 0.3s;
 }
-.contact .col-md-4 .fa-facebook{
+.fa-facebook{
     color:#3B5998;
  }
-.contact .col-md-4 .fa{
+.col-md-4 .fa{
     cursor: pointer;
  }
 .contact .col-md-4 .fa-linkedin:hover{
     color:#fff;
     transition: 0.3s;
  }
- .contact .col-md-4 .fa-linkedin{
+.fa-linkedin{
     color:#04669A;
+ }
+ .fa-instagram{
+    color:#bd081c;
+ }
+ .fa-github{
+    color:#000;
  }
  .contact .col-md-4 .fa-envelope:hover{
     color:#fff;
@@ -317,39 +357,6 @@ body{
 .fa-heart-o{
         color: rgba(178, 134, 68, 0.8);
 }
-
-/* social-icons */
-
-.social-icons{
-    position: sticky;
-    top:50%;
-    z-index: 1;
-    width: 80px;
-    transform: translateY(-50%)
-}
-.social-icons ul{
- padding: initial;
-}
-.social-icons ul li{
-    list-style-type: none;
-    height: 40px;
-    width: 40px;
-    padding-left: 12px;
-    background: #fff;
-    margin-top: 5px;
-    color: rgba(178, 134, 68, 0.8);;
-    padding-top: 6px;
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;
-   }
-
-   .social-icons ul li:hover{
-    
-    width: 80px;
-    padding-left: 30px;
-    transition: 1s;
-   }
    
 .italic{
 font-style: italic;
