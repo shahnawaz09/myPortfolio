@@ -76,6 +76,9 @@ body{
     border-radius: 0 20px;
 }
 @media(max-width:567px){
+    .abtTitle{
+        margin-bottom: 35px;
+    }
     .UserBoxMb{
         margin-bottom: 30px;
     }
